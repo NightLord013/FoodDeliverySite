@@ -32,13 +32,11 @@ class Dish(models.Model):
 
 
 class Gallery(models.Model):
-	image = models.ImageField(upload_to='galery', verbose_name='Фото')
+	image = models.ImageField(upload_to='gallery', verbose_name='Фото')
 	dish = models.ForeignKey(Dish, on_delete=models.CASCADE, related_name='images')
 
 	class Meta:
 		verbose_name = 'Фотография'
 		verbose_name_plural = 'Фотографии'
 
-	def __str__(self):
-		return self.image
 

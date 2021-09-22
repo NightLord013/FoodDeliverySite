@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{% block title %}{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	</head>
+	<body>
+		<header class = "header">
+		    <div class="container header__container">
+		        <div class="menu-burger__header">
+		            <span></span>
+		        </div>
+		        <nav class="header__nav">
+		        	<div class="menu menu__title">
+		        		Меню
+		        		<div class="menu__close">
+		        			<span></span>
+		        		</div>
+		        	</div>
+		            <ul class="menu header__menu">
+		                <li><a href="" class="menu__item">Магазин</a></li>
+		                <li><a href="" class="menu__item">О компании</a></li>
+		                <li><a href="" class="menu__item">Доставка</a></li>
+		                <li><a href="" class="menu__item">Оплата</a></li>
+		                <li><a href="" class="menu__item">Отзывы</a></li>
+		                <li><a href="" class="menu__item">Контакты</a></li>
+		            </ul>
+		        </nav>
+		        
+		        <div class="header__cart"><img src="{% static 'img/shopping-cart.svg' %}" width="28"><span class="header__card_count">0</span></div>
+		    </div>
+		</header>
+		<div class="content-wrapper">
+		    <div class = "container content-wrapper__container">
+		        <p>
+		        </p>        
+		    </div>    
+		</div>
+		<!--JS-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="{% static 'js/menu.js' %}"></script> 
+	</body>
+</html>
